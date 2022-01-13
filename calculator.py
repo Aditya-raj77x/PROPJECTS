@@ -4,7 +4,12 @@ def click(events):
     text=events.widget.cget("text")
     print(text)
     if text=="=":
-        
+        if scvalue.get().isdigit():
+            value=int(scvalue.get())
+        else:
+            value=eval(screen.get())
+        scvalue.set(value)
+        screen.update()
     elif text=="c":
         scvalue.set("")
         screen.update()
@@ -72,7 +77,7 @@ b.bind("<Button-1>",click)
 
 f=Frame(root,bg="gray")
 f.pack()
-b=Button(f,text="/",padx=11,pady=17,font="lucida 35 bold")
+b=Button(f,text="c",padx=11,pady=17,font="lucida 35 bold")
 b.pack(side=LEFT,padx=11,pady=4)
 b.bind("<Button-1>",click)
 b=Button(f,text="%",padx=11,pady=17,font="lucida 35 bold")
@@ -83,7 +88,7 @@ b.pack(side=LEFT,padx=11,pady=4)
 b.bind("<Button-1>",click)
 f=Frame(root,bg="gray")
 f.pack()
-b=Button(f,text="c",padx=11,pady=17,font="lucida 35 bold")
+b=Button(f,text="/",padx=11,pady=17,font="lucida 35 bold")
 b.pack(side=LEFT,padx=11,pady=4)
 b.bind("<Button-1>",click)
 b=Button(f,text="*",padx=11,pady=17,font="lucida 35 bold")
