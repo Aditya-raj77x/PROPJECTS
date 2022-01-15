@@ -7,7 +7,12 @@ def click(events):
         if scvalue.get().isdigit():
             value=int(scvalue.get())
         else:
-            value=eval(screen.get())
+            try:
+                value=eval(screen.get())
+            except EXCEPTION as e:
+                print(e)
+                value="error"
+
         scvalue.set(value)
         screen.update()
     elif text=="c":
@@ -17,7 +22,7 @@ def click(events):
         scvalue.set(scvalue.get()+text)
         screen.update()
 root=Tk()
-root.geometry("600x900")
+root.geometry("600x970")
 root.title("CALCULATOR BY ADITYA")
 root.wm_iconbitmap("game.ico")
 scvalue=StringVar()
@@ -77,10 +82,10 @@ b.bind("<Button-1>",click)
 
 f=Frame(root,bg="gray")
 f.pack()
-b=Button(f,text="c",padx=11,pady=17,font="lucida 35 bold")
-b.pack(side=LEFT,padx=11,pady=4)
+b=Button(f,text="c",padx=8,pady=12,font="lucida 35 bold")
+b.pack(side=LEFT,padx=8,pady=8)
 b.bind("<Button-1>",click)
-b=Button(f,text="%",padx=11,pady=17,font="lucida 35 bold")
+b=Button(f,text="%",padx=2,pady=11,font="lucida 35 bold")
 b.pack(side=LEFT,padx=11,pady=4)
 b.bind("<Button-1>",click)
 b=Button(f,text="=",padx=11,pady=17,font="lucida 35 bold")
