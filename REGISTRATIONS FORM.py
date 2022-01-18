@@ -2,7 +2,7 @@ from tkinter import *
 root=Tk()
 root.geometry("500x300")
 def ms():
-    print("your form have been accepted")
+    print("your form have been accepted!!!")
 Label(root,text="Python Registration Form",font="ar 17 bold").grid(row=0,column=3)
 name=Label(root,text="Name")
 phone=Label(root,text="PHone")
