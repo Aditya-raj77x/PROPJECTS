@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.heroSection{
+    background-image: url("./assets/heroSection_background.png");
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 70vh;
+    color: white;
+    
+
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    
+}
+.heroSection header nav .left_side{
+    font-size: 13px;
+    position: absolute;
+    left: 169px;
+    font-weight: 900;
+    top: 25px;
+    cursor: pointer;
+}
+.heroSection header nav .right_side{
+    position: absolute;
+    right: 155px;
+    top: 25px;
+
+}
+.heroSection header nav .right_side a{
+    color: white;
+    display: inline-flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: normal;
+    cursor: pointer;
+    /* position: absolute;
+    justify-content: space-around; */
+    
+}
+.heroSection .heroMain_section{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
+.heroSection .heroMain_section img{
+    height: 60px;
+    /* width: 100%; */
+    position: absolute;
+    top: 130px;
+}
+.hero_text{
+    position: absolute;
+    top: 210px;
+    font-size: 40px;
+    height: 55px;
+    
+}
+.input_feilds{
+    background-color: #ffffff;
+    top: 280px;
+    position: absolute;
+    border-radius: 7px;
+    
+    
+}
+.bb::after{
+    content: "";
+    border-right: solid 1px black;
+}
+.bb{
+    color: black;
+    font-size: 30px;
+}
+.bb1{
+    color: black;
+    font-size: 30px;
+}
+.input_feilds .aa{
+    color: hotpink;
+    font-size: 30px;
+}
+.first_input{
+    text-decoration: none;
+    border: none;
+    outline: none;
+    width: 182px;
+    font-size: 20px;
+    text-align: center;
+    height: 38px;
+    
+}
+.second_input{
+    width: 380px;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-size: 17px;
+}
+.card_section{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card_section .card1{
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+    margin: 10px;
+}
+.card_section img{
+    width: 361px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+}
+.card1_text{
+    color: rgba(0, 0, 0, 0.747);
+    font-size: 20px;
+    margin: 10px;
+
+}
+.card_para{
+    color: rgba(0, 0, 0, 0.747);
+    font-size: 20px;
+    margin: 10px;
+}
+.card1:hover{
+    transform: scale(1.1);
+}
