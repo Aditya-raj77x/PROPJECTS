@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+html body{
+    width: 100%;
+    height: 100vh;
+    background: #e7e8e9;
+    /* font-family:'Times New Roman', Times, serif; */
+}
+.navbar{
+    position: absolute;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 88%;
+    margin: 41px 159px;
+    z-index: 1;
+}
+.logo,.search{
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+.search{
+    padding: 10px 46px;
+}
+.images{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    z-index: 1;
+}
+.img{
+    width: 170px;
+    height: 300px;
+    margin: 48px;
+    cursor: pointer;
+}
+.images .img:hover{
+    filter: grayscale(1);
+}
+.img1{
+    transform: scale(1.1);
+    background: url(./pic1.jfif) 50% 50% no-repeat;
+    background-size: cover;
+}
+.img2{
+    transform: scale(1.1);
+    background: url(./pic2.jfif) 50% 50% no-repeat;
+    background-size: cover;
+}
+.img3{
+    transform: scale(1.1);
+    background: url(./pic3.jfif) 50% 50% no-repeat;
+    background-size: cover;
+}
+.img4{
+    transform: scale(1.1);
+    background: url(./pic4.jfif) 50% 50% no-repeat;
+    background-size: cover;
+}
+.img5{
+    transform: scale(1.1);
+    background: url(./pic5.jfif) 50% 50% no-repeat;
+    background-size: cover;
+    
+}
+.title span{
+    position: absolute;
+    font-size: 150px;
+    text-transform: uppercase;
+    color: white;
+    top: 50%;
+    font-weight: bolder;
+    left: 178px;
+    letter-spacing: 80px;
+    z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
